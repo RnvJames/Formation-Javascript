@@ -32,54 +32,33 @@ var mdpUser = prompt ("Veuillez saisir votre mot de passe", "<Saisir votre mot d
 
 
 
+// --- 3. Si l'utilisateur a un bon mdp il rentre ou sinon il est renvoyer sur un message d'erreur
+ 
+
+
+
+
+
 // -- 3. Vérifier si l'email et le mot de passe saisie par l'utilisateur correspond avec la BDD.
 
-
-for(let i = 0 ; i < BaseDeDonnees.length ; i++) {
+boucle: {
+    for(let i = 0 ; i < BaseDeDonnees.length ; i++)  {
     
-    let donnees = BaseDeDonnees[i];
-
-
-    for(let email in donnees.email); {
-
-    for(let mdp in donnees.mdp); {
-console.log(donnees)
-
-
-
-
-
-
-function monUtilisateurEstCorrect(emailPasseEnParam, mdpPasseEnParam) {
-
-    if(emailPasseEnParam === donnees.email && mdpPasseEnParam === donnees.mdp) {
-        return true;
-    } else {
-        return false;
-    }
-
+        console.log(BaseDeDonnees[i])
+        
+          if (emailUser === BaseDeDonnees[i].email && mdpUser === BaseDeDonnees[i].mdp) {
+                break boucle
+   
+            alert('Bienvenue sur mon site internet'); 
+            
+          } else {
+             alert('ATTENTION, email/mot de passe incorrect.');
+         
+         }
+         
+         }
+         
+    
 }
-}
-}
-
-
-if(monUtilisateurEstCorrect(emailUser, mdpUser)) {
-    // -- 3a. Si tout est ok, alors, BIENVENUE
-    alert('Bienvenue ' + emailUser + ' !');
-} else {
-    alert('ATTENTION, email/mot de passe incorrect.');
-    // -- 3b. Sinon, on affiche un message d'erreur.
-
-
-}
-
-
-}
-
-
-
-
-
-
 
 
