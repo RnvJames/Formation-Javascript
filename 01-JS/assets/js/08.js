@@ -103,7 +103,7 @@ let emailuser = prompt("Veuillez saisir votre email", "<Saisir votre Email>");
  * @return {boolean}
  */
 
- /*
+ 
 
 
 function monUtilisateurEstCorrect(emailPasseEnParam, mdpPasseEnParam) {
@@ -133,7 +133,7 @@ if(monUtilisateurEstCorrect(emailUser, mdpUser)) {
 
 
 
-*/
+
 
 
 
