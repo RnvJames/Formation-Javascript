@@ -19,67 +19,38 @@ function w(f) {
     document.write(f);
 }
 
-// -- 1. Demander à l'utilisateur son email
+// -- Déclaration des Variables
+// EstCeQueLeMailEstDansLeTableau = faux;
+var isEmailInArray = false;
 
+// -- 1. Demander à l'utilisateur son email/mot de passe
+var email   = prompt('Bonjour, Quel est votre email ?','<Saisissez votre email>');
+var mdp     = prompt('votre mot de passe ?','<Saisissez votre mot de passe>');
 
-var emailUser = prompt("Veuillez saisir votre email", "<Saisir votre Email>");
-
-
-// -- 2. Demander son mot de passe
-
-
-var mdpUser = prompt ("Veuillez saisir votre mot de passe", "<Saisir votre mot de passe>");
-
-
-
-// -- 3. Vérifier si l'email et le mot de passe saisie par l'utilisateur correspond avec la BDD.
-
-
+// -- 2. Parcourir l'ensemble des données de mon tableau
+// for(let user of BaseDeDonnees) {...}
 for(let i = 0 ; i < BaseDeDonnees.length ; i++) {
-    
-    let donnees = BaseDeDonnees[i];
 
+    // -- 2a. Vérifier l'identification de l'utilisateur
+    if(email === BaseDeDonnees[i].email && mdp === BaseDeDonnees[i].mdp) {
+        
+        // -- J'ai trouvé une correspondance
+        isEmailInArray = true;
+        w('Bonjour ' + BaseDeDonnees[i].prenom + ' !');
 
-    for(let email in donnees.email); {
-
-    for(let mdp in donnees.mdp); {
-console.log(donnees)
-
-
-
-
-
-
-function monUtilisateurEstCorrect(emailPasseEnParam, mdpPasseEnParam) {
-
-    if(emailPasseEnParam === donnees.email && mdpPasseEnParam === donnees.mdp) {
-        return true;
-    } else {
-        return false;
+        // -- Je stop la boucle for, j'ai trouvé ce que je cherche.
+        break;
     }
 
 }
-}
-}
 
-
-if(monUtilisateurEstCorrect(emailUser, mdpUser)) {
-    // -- 3a. Si tout est ok, alors, BIENVENUE
-    alert('Bienvenue ' + emailUser + ' !');
-} else {
-    alert('ATTENTION, email/mot de passe incorrect.');
-    // -- 3b. Sinon, on affiche un message d'erreur.
+if(!isEmailInArray) {
+    // -- Aucune correspondance
+    alert('ATTENTION, Email / Mot de Passe incorrect !');
+    
 
 
 }
-
-
-}
-
-
-
-
-
 
 
 
