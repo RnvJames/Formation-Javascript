@@ -14,36 +14,45 @@
 
 var pseudo = document.getElementById("pseudo");
 
-console.log(pseudo)
+var errorPseudo = document.getElementById('form').getElementsByTagName('div')
 
-function LaSaisieDeMonInput(){
-    console.log(pseudo.value)
-}
+var error = document.getElementsByTagName("div")
 
-pseudo.addEventListener ('input', LaSaisieDeMonInput )
-
-console.log(pseudo.value)
+var formulaire = document.getElementsByTagName("form")
 
 
-var isPseudoInArray = false;
+errorPseudo.style.display="initial";
 
 
 
 
-for(let i = 0 ; i < membres.length ; i++) {
 
+
+
+
+
+
+
+/* for(let i = 0 ; i < membres.length ; i++) {
+
+    function LaSaisieDeMonInput()
+    { 
+    pseudo.addEventListener ('input', LaSaisieDeMonInput )
+   console.log(pseudo.value) }
     if( pseudo === membres[i].pseudo) {
-        
-        isPseudoInArray = true;
 
 console.log(membres[i].pseudo)
 
         // si le pseudo est deja pris afficher pseudo error
 
-        var pseudoError = document.getElementsByClassName('pseudoError')
 
-        document.body.appendChild(pseudoError)
+    
     }
 
 }
+
+
+
+LaSaisieDeMonInput()
+ */
 

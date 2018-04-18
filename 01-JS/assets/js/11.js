@@ -51,13 +51,11 @@ if(!isEmailInArray) {
 
 // -- 3. Vérifier si l'email et le mot de passe saisie par l'utilisateur correspond avec la BDD.
 
-boucle: {
     for(let i = 0 ; i < BaseDeDonnees.length ; i++)  {
     
         console.log(BaseDeDonnees[i])
         
           if (emailUser === BaseDeDonnees[i].email && mdpUser === BaseDeDonnees[i].mdp) {
-                break boucle
    
             alert('Bienvenue sur mon site internet'); 
             
@@ -71,8 +69,3 @@ boucle: {
     
 }
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 545cf799e069f034100a750bbd334dd5708c68b7
