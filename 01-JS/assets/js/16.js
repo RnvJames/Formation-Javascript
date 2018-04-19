@@ -94,6 +94,7 @@ errorPseudo.style.display="initial";
 =======
 >>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
 
+<<<<<<< HEAD
 age.addEventListener('change', function () {
     
     if(age.value < 18) {
@@ -106,6 +107,19 @@ age.addEventListener('change', function () {
 <<<<<<< HEAD
         ageerror.style.display = "none";
         submit.disabled = false;
+=======
+var errorPseudo = document.getElementById('form').getElementsByTagName('div')
+
+var error = document.getElementsByTagName("div")
+
+var formulaire = document.getElementsByTagName("form")
+
+
+errorPseudo.style.display="initial";
+
+
+
+>>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
 
     }
 
@@ -123,8 +137,11 @@ inscriptionform.addEventListener('submit', function (event) {
     // console.log(e);
     console.log('Inscription form is submitted');
 
+<<<<<<< HEAD
     // -- Stopper la redirection HTTP de notre " event "
     event.preventDefault();
+=======
+>>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
 
     // -- Créer un objet membre à ajouter au tableau
     let membre = {
@@ -145,6 +162,10 @@ inscriptionform.addEventListener('submit', function (event) {
 =======
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
 /* for(let i = 0 ; i < membres.length ; i++) {
 
     function LaSaisieDeMonInput()
@@ -152,9 +173,12 @@ inscriptionform.addEventListener('submit', function (event) {
     pseudo.addEventListener ('input', LaSaisieDeMonInput )
    console.log(pseudo.value) }
     if( pseudo === membres[i].pseudo) {
+<<<<<<< HEAD
 >>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
 
     // -- Etape 4B
+=======
+>>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
 
     var p = document.createElement('p');
     p.innerHTML = "Merci " + pseudo.value + "! <br><strong>Tu es maintenant inscrit.</strong><br><br><u>Voici la liste de nos membres :</u>";
@@ -166,12 +190,17 @@ inscriptionform.addEventListener('submit', function (event) {
     var ul = document.createElement('ul');
     for(let i = 0 ; i < membres.length ; i++) {
 
+<<<<<<< HEAD
         let li = document.createElement('li');
         let liste = membres[i].pseudo + " : " + membres[i].age + " ans";
 
         li.textContent = liste;
         ul.appendChild(li);
 
+=======
+
+    
+>>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
 =======
 
     
@@ -188,6 +217,11 @@ inscriptionform.addEventListener('submit', function (event) {
 
 
 
+
+
+
+LaSaisieDeMonInput()
+ */
 
 
 

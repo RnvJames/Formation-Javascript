@@ -65,8 +65,15 @@ if(!isEmailInArray) {
          }
          
          }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 }
 =======
+>>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
+=======
+         
+    
+}
+
 >>>>>>> f0480bea20b18c8efb3d4172a7f7b29bad0e7662
