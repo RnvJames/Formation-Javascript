@@ -32,7 +32,7 @@
         alert('Bienvenue dans ce cours jQuery !');
     
         // -- En JS :
-        document.getElementById('TexteEnJquery').innerHTML = "<strong>Mon Texte en JS</strong>";
+        document.getElementById('TexteEnJquery').innerHTML = <strong>Mon Texte en JS</strong>;
     
         // -- En JQ :
         // -- En jQuery, les sélecteurs sont les mêmes qu'en CSS !!!
